@@ -111,7 +111,7 @@
         public function contact_post(Request $request)
         {
 
-            $creating = Contact::create([
+            Contact::create([
                 'name'    => $request->get('name'),
                 'email'   => $request->get('email'),
                 'message' => $request->get('message')
@@ -119,17 +119,6 @@
 
             return view('success');
         }
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
